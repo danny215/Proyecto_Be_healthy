@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listado">
+    <item>EJERCICIOS      </item>
+    <item>Press Banca           10-10-10-10-10-10-10-10-10-10</item>
+    <item>Jalón al pecho        10-10-10-10-10-10-10-10-10-10</item>
+    <item>Cruce de poleas       10-10-10-10</item>
+    <item>Remo Cerrado          10-10-10-10</item>
+
+</string-array>
+    <string-array name="listado2">
+        <item>EJERCICIOS      </item>
+        <item>Sentadilla           10-10-10-10-10-10-10-10-10-10</item>
+        <item>Peso muerto        10-10-10-10-10-10-10-10-10-10</item>
+        <item>Elevacion de Piernas       10-10-10-10</item>
+        <item>Crunch          10-10-10-10</item>
+
+    </string-array>
+
+    <string-array name="listado3">
+        <item>EJERCICIOS      </item>
+        <item>Fondos para triceps           10-10-10-10-10-10-10-10-10-10</item>
+        <item>Curl barra"Z"      10-10-10-10-10-10-10-10-10-10</item>
+        <item>Press para hombro con mancuernas       10-10-10-10</item>
+        <item>Elevaciones laterales sentado          10-10-10-10</item>
+
+    </string-array>
+    <string-array name="listado4">
+        <item>EJERCICIOS      </item>
+        <item>Pecho           15-12-10-8</item>
+        <item>Deltoide     15-12-10-8</item>
+        <item>Triceps      10-10-10-10</item>
+        <item>Gemelos          10-10-10-10</item>
+
+    </string-array>
+
+    <string-array name="listado5">
+        <item>EJERCICIOS      </item>
+        <item>Jalon dorsal frontal           15-12-10-8</item>
+        <item>Remo     15-12-10-8</item>
+        <item>Press Militar      10-10-10-10</item>
+        <item>Lagartigas          10-10-10-10</item>
+
+    </string-array>
+    <string-array name="listado6">
+        <item>EJERCICIOS      </item>
+        <item>Encogimiento          30-30-30-30</item>
+        <item>Plancha horizontal     30-30-30-30</item>
+        <item>Elevacion de talones de pie      30-30-30-30</item>
+
+
+    </string-array>
+
+
+    <string-array name="listado7">
+        <item>EJERCICIOS      </item>
+        <item>Encogimiento          30-30-30-30</item>
+        <item>Plancha horizontal     30-30-30-30</item>
+        <item>Elevacion de talones de pie      30-30-30-30</item>
+
+
+    </string-array>
+
+
+
+
+
+
+</resources>
