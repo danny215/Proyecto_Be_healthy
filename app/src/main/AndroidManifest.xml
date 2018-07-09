@@ -60,7 +60,10 @@
             android:exported="true" />
         <activity android:name=".HttpFuelActivity" />
         <activity android:name=".HttpFuel1Activity" />
-        <activity android:name=".VozActivity"></activity>
+        <activity android:name=".VozActivity" />
+        <activity android:name=".RegistrarEjercicioActivity" />
+        <activity android:name=".RutinasActivity" />
+        <activity android:name=".AlimentosActivity"></activity>
     </application>
 
 </manifest>

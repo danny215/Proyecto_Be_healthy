@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accent"
+    tools:context=".AlimentosActivity">
+
+    <TextView
+        android:id="@+id/txt_tipoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/accent"
+        android:backgroundTint="@color/accent"
+        android:text="Tipo Alimento:"
+        android:textColorHint="@color/black"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <TextView
+        android:id="@+id/txt_nombreA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Nombre Alimento:"
+        app:layout_constraintEnd_toEndOf="@+id/txt_tipoA"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toStartOf="@+id/txt_tipoA"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <TextView
+        android:id="@+id/txt_cantCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Cantidad calorias x 100 g:"
+        app:layout_constraintEnd_toEndOf="@+id/txt_nombreA"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="@+id/txt_nombreA"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <TextView
+        android:id="@+id/txt_cantPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Cantidad proteinas x100 g:"
+        app:layout_constraintEnd_toEndOf="@+id/txt_cantCal"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/txt_cantCal"
+        tools:layout_editor_absoluteY="205dp" />
+
+    <Button
+        android:id="@+id/btn_guardarA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.791" />
+
+    <EditText
+        android:id="@+id/editTipoA"
+        android:layout_width="170dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <EditText
+        android:id="@+id/editNombreA"
+        android:layout_width="169dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/editTipoA"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="@+id/editTipoA"
+        app:layout_constraintTop_toBottomOf="@+id/editTipoA" />
+
+    <EditText
+        android:id="@+id/editCantCal"
+        android:layout_width="124dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/editNombreA"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editNombreA"
+        app:layout_constraintTop_toBottomOf="@+id/editNombreA" />
+
+    <EditText
+        android:id="@+id/editCantPro"
+        android:layout_width="123dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/editCantCal"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editCantCal"
+        app:layout_constraintTop_toBottomOf="@+id/editCantCal" />
+</android.support.constraint.ConstraintLayout>

@@ -18,6 +18,7 @@ import butterknife.ButterKnife
 import butterknife.Bind
 import android.widget.ListView
 import android.widget.ArrayAdapter
+import kotlinx.android.synthetic.main.activity_dietas.*
 
 class DietaActivity : AppCompatActivity() {
 
@@ -28,7 +29,7 @@ class DietaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dietas)
 
-      /*  val res = resources
+        /*  val res = resources
 
 
         val tabs = findViewById(android.R.id.tabhost) as TabHost
@@ -57,5 +58,13 @@ class DietaActivity : AppCompatActivity() {
         opciones.adapter = adapter
 
         tabs.currentTab = 1
-    */}
+    */
+        btn_alimentos.setOnClickListener { v: View? ->
+            irAActividadAlimento()
+        }
+    }
+    fun irAActividadAlimento() {
+        val intent = Intent(this, AlimentosActivity::class.java)
+        startActivity(intent)
+    }
 }

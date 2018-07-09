@@ -29,6 +29,10 @@ class EjercicioActivity : AppCompatActivity() {
         btn_voz.setOnClickListener{
             v:View? -> irAActividadVoz()
         }
+
+        btn_ejercicios.setOnClickListener{
+            v:View? -> irAActividadRegEjer()
+        }
     }
 
     fun onClick(view: View) {
@@ -45,6 +49,11 @@ class EjercicioActivity : AppCompatActivity() {
 
     fun irAActividadVoz() {
         val intent = Intent(this, VozActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun irAActividadRegEjer() {
+        val intent = Intent(this, RegistrarEjercicioActivity::class.java)
         startActivity(intent)
     }
 }

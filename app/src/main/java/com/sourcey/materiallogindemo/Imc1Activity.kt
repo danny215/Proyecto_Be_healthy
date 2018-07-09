@@ -57,7 +57,7 @@ class Imc1Activity : AppCompatActivity() {
 
                 json.put("resultado", tvResultado.text.toString().toInt())
 
-                val httpRequest = Fuel.post("http://172.29.64.36:1337/Datos").body(json.toString())
+                val httpRequest = Fuel.post("http://192.168.100.11:1337/Datos").body(json.toString())
                 httpRequest.headers["Content-Type"] = "application/json"
                 httpRequest.response{request, response, result ->
                     Log.i("mensaje", request.toString())
@@ -70,7 +70,7 @@ class Imc1Activity : AppCompatActivity() {
                     json.put("descripcion", "Peso adecuado:!SIGA COMIENDO Y HACIENDO EJERCICIO ADECUADAMENTE!")
 
                     json.put("resultado", tvResultado.text.toString().toInt())
-                    val httpRequest = Fuel.post("http://172.29.64.36:1337/Datos").body(json.toString())
+                    val httpRequest = Fuel.post("http://192.168.100.11:1337/Datos").body(json.toString())
                     httpRequest.headers["Content-Type"] = "application/json"
                     httpRequest.response{request, response, result ->
                         Log.i("mensaje", request.toString())
@@ -83,7 +83,7 @@ class Imc1Activity : AppCompatActivity() {
                         json.put("descripcion", "Sobrepeso:!ALIMENTATE SALUDABLE Y REALIZA EJERCICIOS PARA BAJAR DE PESO!")
 
                         json.put("resultado", tvResultado.text.toString().toInt())
-                        val httpRequest = Fuel.post("http://172.29.64.36:1337/Datos").body(json.toString())
+                        val httpRequest = Fuel.post("http://192.168.100.11:1337/Datos").body(json.toString())
                         httpRequest.headers["Content-Type"] = "application/json"
                         httpRequest.response{request, response, result ->
                             Log.i("mensaje", request.toString())
@@ -95,7 +95,7 @@ class Imc1Activity : AppCompatActivity() {
                         json.put("descripcion", "OBESIDAD: ADEMÁS DE QUE TIENES QUE COMER SALUDABLE Y REALIZAR EJERCICIOS PARA HAJAR DE PESO, ACUDE A TU MÉDICO DE CABECERA PARA QUE TE AYUDE A CONTROLAR ALGÚN PROBLEMA DEL CORAZÓN ")
 
                         json.put("resultado", tvResultado.text.toString().toInt())
-                        val httpRequest = Fuel.post("http://172.29.64.36:1337/Datos").body(json.toString())
+                        val httpRequest = Fuel.post("http://192.168.100.11:1337/Datos").body(json.toString())
                         httpRequest.headers["Content-Type"] = "application/json"
                         httpRequest.response{request, response, result ->
                             Log.i("mensaje", request.toString())

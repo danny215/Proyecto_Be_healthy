@@ -6,92 +6,102 @@
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".DietaActivity"
     android:orientation="vertical">
 
-    <TabHost android:id="@android:id/tabhost"
+    <TabHost
+        android:id="@android:id/tabhost"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <FrameLayout android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@android:id/tabcontent" >
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <LinearLayout android:id="@+id/tab1"
-                    android:orientation="vertical"
+                <LinearLayout
+                    android:id="@+id/tab1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
-                    <TextView android:id="@+id/textView6"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="DIESTAS SALUDABLES
 
-"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+" />
+
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/diestassalud"
+                        android:layout_height="315dp"
                         android:layout_alignParentBottom="true"
                         android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true" />
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/diestassalud" />
+
+                    <Button
+                        android:id="@+id/btn_alimentos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Alimentos" />
 
                 </LinearLayout>
 
-                <LinearLayout android:id="@+id/tab2"
-                    android:orientation="vertical"
+                <LinearLayout
+                    android:id="@+id/tab2"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                    <TextView android:id="@+id/textView2"
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="NUTRIENTES DE LOS ALIMENTOS
 
-"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="250dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/nutrientes"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true" />
+" />
+
                 </LinearLayout>
-                <LinearLayout android:id="@+id/tab3"
-                    android:orientation="vertical"
+
+                <LinearLayout
+                    android:id="@+id/tab3"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                    <TextView android:id="@+id/textView3"
-                        android:text="EFECTOS NEGATIVOS DE LA COMIDA CHATARRA"
+                    <TextView
+                        android:id="@+id/textView3"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:text="EFECTOS NEGATIVOS DE LA COMIDA CHATARRA" />
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="250dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/consejosmalos"
                         android:layout_alignParentBottom="true"
                         android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true" />
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/consejosmalos" />
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="250dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/consejosmalos1"
                         android:layout_alignParentBottom="true"
                         android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true" />
-
-            
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/consejosmalos1" />
 
 
                 </LinearLayout>
