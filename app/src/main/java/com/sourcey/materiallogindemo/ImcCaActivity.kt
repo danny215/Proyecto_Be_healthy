@@ -1,37 +1,32 @@
 package com.sourcey.materiallogindemo
 
 import android.content.Intent
-import android.support.v7.app.ActionBarActivity
-import android.os.Bundle
-import android.support.v4.content.ContextCompat.startActivity
 import android.support.v7.app.AppCompatActivity
+import android.os.Bundle
 import android.util.Log
-import android.view.Menu
-import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import com.github.kittinunf.fuel.Fuel
-import kotlinx.android.synthetic.main.activity_imc1.*
+import kotlinx.android.synthetic.main.activity_imc_ca.*
 import org.json.JSONObject
 
-class Imc1Activity : AppCompatActivity() {
+class ImcCaActivity : AppCompatActivity() {
 
-    /*internal var button2: TextView? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_imc1)
+        setContentView(R.layout.activity_imc_ca)
         var imc: Int
         imc = 0
-        val btCalc0ular = findViewById(R.id.btCalcular) as Button
-        btCalc0ular.setOnClickListener {
-            val nombre = findViewById(R.id.editNombre) as TextView
-            val apellido = findViewById(R.id.editApellido) as TextView
-            val fechaUso = findViewById(R.id.editFecha) as TextView
-            val editPeso = findViewById(R.id.editPeso) as TextView
-            val editAltura = findViewById(R.id.editAltura) as TextView
-            var tvResultado = findViewById(R.id.tvResultado) as TextView
-            val tvDescripcion = findViewById(R.id.tvDescripcion) as TextView
+        val btCalc0ular = findViewById(R.id.btnCalcular) as Button
+        btnCalcular.setOnClickListener {
+            val nombre = findViewById(R.id.editTextNombre) as TextView
+            val apellido = findViewById(R.id.editTextApellido) as TextView
+            val fechaUso = findViewById(R.id.editTextFecha) as TextView
+            val editPeso = findViewById(R.id.editTextPeso) as TextView
+            val editAltura = findViewById(R.id.editTextAltura) as TextView
+            var tvResultado = findViewById(R.id.editText) as TextView
+            val tvDescripcion = findViewById(R.id.editText2) as TextView
             val peso = Integer.parseInt(editPeso.text.toString())
             val altura = java.lang.Float.parseFloat(editAltura.text.toString())
 
@@ -52,12 +47,12 @@ class Imc1Activity : AppCompatActivity() {
             tvResultado.text = imc.toString()
 
             if (imc < 18.5) {
-               // tvDescripcion.text = "Desnutricion:!NECESITA COMER MÁS PERO SALUDABLE Y HACER EJERCICIO PARA SUBIR DE PESO!"
+                tvDescripcion.text = "Desnutricion:!NECESITA COMER MÁS PERO SALUDABLE Y HACER EJERCICIO PARA SUBIR DE PESO!"
                 json.put("descripcion", "Desnutricion:!NECESITA COMER MÁS PERO SALUDABLE Y HACER EJERCICIO PARA SUBIR DE PESO!")
 
                 json.put("resultado", tvResultado.text.toString().toInt())
 
-                val httpRequest = Fuel.post("http://192.168.100.11:1337/Datos").body(json.toString())
+                val httpRequest = Fuel.post("http://172.29.54.25:1337/Datos").body(json.toString())
                 httpRequest.headers["Content-Type"] = "application/json"
                 httpRequest.response{request, response, result ->
                     Log.i("mensaje", request.toString())
@@ -66,11 +61,11 @@ class Imc1Activity : AppCompatActivity() {
                 }
             } else {
                 if (imc < 25) {
-                   // tvDescripcion.text = "Peso adecuado:!SIGA COMIENDO Y HACIENDO EJERCICIO ADECUADAMENTE!"
+                    tvDescripcion.text = "Peso adecuado:!SIGA COMIENDO Y HACIENDO EJERCICIO ADECUADAMENTE!"
                     json.put("descripcion", "Peso adecuado:!SIGA COMIENDO Y HACIENDO EJERCICIO ADECUADAMENTE!")
 
                     json.put("resultado", tvResultado.text.toString().toInt())
-                    val httpRequest = Fuel.post("http://192.168.100.11:1337/Datos").body(json.toString())
+                    val httpRequest = Fuel.post("http://172.29.54.25:1337/Datos").body(json.toString())
                     httpRequest.headers["Content-Type"] = "application/json"
                     httpRequest.response{request, response, result ->
                         Log.i("mensaje", request.toString())
@@ -79,11 +74,11 @@ class Imc1Activity : AppCompatActivity() {
                     }
                 } else {
                     if (imc < 30) {
-                        //tvDescripcion.text = "Sobrepeso:!ALIMENTATE SALUDABLE Y REALIZA EJERCICIOS PARA BAJAR DE PESO!"
+                        tvDescripcion.text = "Sobrepeso:!ALIMENTATE SALUDABLE Y REALIZA EJERCICIOS PARA BAJAR DE PESO!"
                         json.put("descripcion", "Sobrepeso:!ALIMENTATE SALUDABLE Y REALIZA EJERCICIOS PARA BAJAR DE PESO!")
 
                         json.put("resultado", tvResultado.text.toString().toInt())
-                        val httpRequest = Fuel.post("http://192.168.100.11:1337/Datos").body(json.toString())
+                        val httpRequest = Fuel.post("http://172.29.54.25:1337/Datos").body(json.toString())
                         httpRequest.headers["Content-Type"] = "application/json"
                         httpRequest.response{request, response, result ->
                             Log.i("mensaje", request.toString())
@@ -91,11 +86,11 @@ class Imc1Activity : AppCompatActivity() {
                             Log.i("mensaje", result.toString())
                         }
                     } else {
-                        //tvDescripcion.text = "OBESIDAD: ADEMÁS DE QUE TIENES QUE COMER SALUDABLE Y REALIZAR EJERCICIOS PARA HAJAR DE PESO, ACUDE A TU MÉDICO DE CABECERA PARA QUE TE AYUDE A CONTROLAR ALGÚN PROBLEMA DEL CORAZÓN "
+                        tvDescripcion.text = "OBESIDAD: ADEMÁS DE QUE TIENES QUE COMER SALUDABLE Y REALIZAR EJERCICIOS PARA HAJAR DE PESO, ACUDE A TU MÉDICO DE CABECERA PARA QUE TE AYUDE A CONTROLAR ALGÚN PROBLEMA DEL CORAZÓN "
                         json.put("descripcion", "OBESIDAD: ADEMÁS DE QUE TIENES QUE COMER SALUDABLE Y REALIZAR EJERCICIOS PARA HAJAR DE PESO, ACUDE A TU MÉDICO DE CABECERA PARA QUE TE AYUDE A CONTROLAR ALGÚN PROBLEMA DEL CORAZÓN ")
 
                         json.put("resultado", tvResultado.text.toString().toInt())
-                        val httpRequest = Fuel.post("http://192.168.100.11:1337/Datos").body(json.toString())
+                        val httpRequest = Fuel.post("http://172.29.54.25:1337/Datos").body(json.toString())
                         httpRequest.headers["Content-Type"] = "application/json"
                         httpRequest.response{request, response, result ->
                             Log.i("mensaje", request.toString())
@@ -111,15 +106,12 @@ class Imc1Activity : AppCompatActivity() {
 
 
         }
-        registro.setOnClickListener{
-            v:View? -> irAActividadHTTP()
+      btnRegistrar.setOnClickListener{
+            v: View? -> irAActividadHTTP()
         }
     }
-    fun irAActividadHTTP() {
+    /*fun irAActividadHTTP() {
         val intent = Intent(this, HttpFuel1Activity::class.java)
         startActivity(intent)
     }*/
 }
-
-
-

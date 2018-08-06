@@ -24,10 +24,10 @@ class MainActivity : AppCompatActivity() {
     fun onClick(view: View) {
         var miIntent: Intent? = null
         when (view.id) {
-            R.id.button2 -> miIntent = Intent(this@MainActivity, ImcActivity::class.java)
-            R.id.button3 -> miIntent = Intent(this@MainActivity, Imc1Activity::class.java)
+           // R.id.button2 -> miIntent = Intent(this@MainActivity, ImcActivity::class.java)
+            R.id.button3 -> miIntent = Intent(this@MainActivity, ImcCaActivity::class.java)
 
-
+            R.id.button2 -> miIntent = Intent(this@MainActivity, Imc1Activity::class.java)
             R.id.button4 -> miIntent = Intent(this@MainActivity, ModuloActivity::class.java)
         }
         startActivity(miIntent)

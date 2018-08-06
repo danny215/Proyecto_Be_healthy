@@ -24,25 +24,23 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_rutinas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.11"
-        android:background="@android:color/holo_green_light"
-        android:fontFamily="casual"
-        android:text="DIETAS"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="24sp"
-        android:onClick="onClick"
-        android:layout_below="@+id/imageView2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />/>
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView2"
+        android:layout_weight="0.11"
+        android:fontFamily="casual"
+        android:onClick="onClick"
+        android:text="RUTINAS"
+        android:textSize="24sp" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="242dp"
         android:layout_height="167dp"
-        android:layout_below="@+id/button5"
+        android:layout_below="@+id/btn_rutinas"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.50"
@@ -50,20 +48,20 @@
         android:visibility="visible" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btn_nutricion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="62dp"
         android:layout_weight="0.11"
         android:background="@android:color/holo_green_light"
         android:fontFamily="casual"
-        android:text="EJERCICIOS"
+        android:onClick="onClick"
+        android:text="NUTRICIÓN"
         android:textColor="@color/cardview_light_background"
-        android:textSize="24sp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="62dp"
-        android:onClick="onClick"/>/>
+        android:textSize="24sp" />/>
 
     <ImageView
         android:id="@+id/imageView2"
@@ -72,16 +70,17 @@
         android:layout_gravity="center_horizontal"
         android:src="@drawable/men1"
         android:visibility="visible"
-        android:layout_below="@+id/button6"
+        android:layout_below="@+id/btn_nutricion"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/button7"
-        android:layout_width="148dp"
-        android:layout_height="61dp"
+        android:id="@+id/btn_ejercicios"
+        android:layout_width="352dp"
+        android:layout_height="62dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="onClick"
-        android:text="EJERCICIO" />
-    />
+        android:text="EJERCICIOS"
+        android:textSize="24sp" />
+
 </RelativeLayout>

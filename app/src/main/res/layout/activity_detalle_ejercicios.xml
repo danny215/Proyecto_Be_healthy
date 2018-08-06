@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sourcey.materiallogindemo.Alimentos.AlimentosActivity">
+    tools:context="com.sourcey.materiallogindemo.DetalleEjercicio.DetalleEjerciciosActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_detalle_alimentos"
+        android:id="@+id/recycler_detalle_ejercicios"
         android:layout_width="368dp"
         android:layout_height="492dp"
         android:layout_marginBottom="8dp"

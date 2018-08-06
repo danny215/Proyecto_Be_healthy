@@ -1,7 +1,8 @@
-package com.sourcey.materiallogindemo
+package com.sourcey.materiallogindemo.Rutinas
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.sourcey.materiallogindemo.R
 
 class RutinasActivity : AppCompatActivity() {
 

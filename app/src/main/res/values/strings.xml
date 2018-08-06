@@ -12,4 +12,11 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="btnDetallesEjercicios">Tipos de Ejercicios</string>
+    <string name="btnDetallesEjer">Detalles Ejercicio</string>
+    <string name="btnDieta">Ver Alimentos</string>
+    <string name="btn_listaE">Ver Lista Ejercicios</string>
+    <string name="btn_listaA">Ver Tipos Alimentos</string>
+    <string name="btn_detallesAlimento">Informacion Alimento</string>
+    <string name="title_activity_nueva_rutina">NuevaRutinaActivity</string>
 </resources>

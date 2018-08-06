@@ -29,13 +29,13 @@
             android:name=".EjercicioActivity"
             android:theme="@style/AppTheme.Dark" />
         <activity
-            android:name=".MostrarejerActivity"
+            android:name=".Ejercicios.MostrarejerActivity"
             android:theme="@style/AppTheme.Dark" />
         <activity
             android:name=".CaloriasActivity"
             android:theme="@style/AppTheme.Dark" />
         <activity
-            android:name=".DietaActivity"
+            android:name=".Nutricion.DietaActivity"
             android:theme="@style/AppTheme.Dark" />
         <activity
             android:name=".ImcActivity"
@@ -58,12 +58,34 @@
         <activity
             android:name="com.facebook.CustomTabActivity"
             android:exported="true" />
-        <activity android:name=".HttpFuelActivity" />
-        <activity android:name=".HttpFuel1Activity" />
         <activity android:name=".VozActivity" />
-        <activity android:name=".RegistrarEjercicioActivity" />
-        <activity android:name=".RutinasActivity" />
-        <activity android:name=".AlimentosActivity"></activity>
+        <activity android:name=".Ejercicios.RegistrarEjercicioActivity" />
+        <activity android:name=".Rutinas.RutinasActivity" />
+        <activity android:name=".ImcCaActivity" />
+        <activity android:name=".Nutricion.AlimentosActivity" />
+        <activity android:name=".EjercicioBDActivity" />
+        <activity android:name=".ListActivity" />
+        <activity android:name=".CreateEjercicioActivity" />
+        <activity android:name=".CreateActivity" />
+        <activity android:name="com.sourcey.materialloginexample.DetailsActivity" />
+        <activity android:name="com.sourcey.materialloginexample.DetailsEjercicioActivity" />
+        <activity android:name="com.sourcey.materialloginexample.recycler_layout" />
+        <activity android:name=".Ejercicios.EjerciciosActivity" />
+        <activity android:name=".DetalleEjercicio.DetalleEjerciciosActivity" />
+        <activity android:name=".Alimentos.AlimentosActivity" />
+        <activity android:name=".BuscarEjercicioActivity" />
+        <activity android:name=".BuscarAlimentoActivity" />
+        <activity android:name=".Alimentos.DetallesAlimentosActivity" />
+        <activity android:name=".DetalleEjercicio.DetallesEjercicioBActivity" />
+        <activity
+            android:name=".Rutinas.NuevaRutinaActivity"
+            android:label="@string/title_activity_nueva_rutina"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Rutinas.DatosRutinaActivity" />
+        <activity android:name=".Rutinas.DatosRegistradosActivity" />
+        <activity android:name=".Rutinas.DetallesRegistroActivity" />
+        <activity android:name=".Rutinas.RegistroActivity" />
+        <activity android:name=".Rutinas.RutinaDatosActivity"></activity>
     </application>
 
 </manifest>
