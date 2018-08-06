@@ -23,7 +23,7 @@ class EjerciciosDB {
             val ejercicios: ArrayList<Ejercicios> = ArrayList()
             val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
             StrictMode.setThreadPolicy(policy)
-            val (request, response, result) = "http://192.168.100.44:1337/Ejercicios".httpGet().responseString()
+            val (request, response, result) = "http://172.29.64.29:1337/Ejercicios".httpGet().responseString()
             val jsonStringEjercicios = result.get()
 
             val parser = Parser()
@@ -42,7 +42,7 @@ class EjerciciosDB {
             val ejercicios: ArrayList<Ejercicios> = ArrayList()
             val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
             StrictMode.setThreadPolicy(policy)
-            val (request, response, result) = "http://192.168.100.44:1337/Ejercicios?tipoEjercicio=${tipoEjercicio}".httpGet().responseString()
+            val (request, response, result) = "http://172.29.64.29:1337/Ejercicios?tipoEjercicio=${tipoEjercicio}".httpGet().responseString()
             val jsonStringEjercicio = result.get()
 
             val parser = Parser()

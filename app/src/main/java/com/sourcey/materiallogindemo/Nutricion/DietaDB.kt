@@ -25,7 +25,7 @@ class DietaDB {
             val dietas: ArrayList<Dieta> = ArrayList()
             val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
             StrictMode.setThreadPolicy(policy)
-            val (request, response, result) = "http://192.168.100.44:1337/Dieta".httpGet().responseString()
+            val (request, response, result) = "http://172.29.64.29:1337/Dieta".httpGet().responseString()
             val jsonStringDieta = result.get()
 
             val parser = Parser()
@@ -43,7 +43,7 @@ class DietaDB {
             val alimentos: ArrayList<Dieta> = ArrayList()
             val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
             StrictMode.setThreadPolicy(policy)
-            val (request, response, result) = "http://192.168.100.44:1337/Dieta?tipoAlimento=${tipoAlimento}".httpGet().responseString()
+            val (request, response, result) = "http://172.29.64.29:1337/Dieta?tipoAlimento=${tipoAlimento}".httpGet().responseString()
             val jsonStringAlimento = result.get()
 
             val parser = Parser()

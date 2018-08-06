@@ -1,9 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-
+    <string name="app_name">Facebook Login Demo</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Módulo</string>
-    <string name="app_name">Facebook Login Demo</string>
     <string name="facebook_app_id">122717695022115</string>
     <string name="fb_login_protocol_scheme">fb122717695022115</string>
     <string name="title_activity_tabs">TabsActivity</string>
@@ -12,11 +11,11 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="btnDetallesEjercicios">Tipos de Ejercicios</string>
-    <string name="btnDetallesEjer">Detalles Ejercicio</string>
-    <string name="btnDieta">Ver Alimentos</string>
-    <string name="btn_listaE">Ver Lista Ejercicios</string>
-    <string name="btn_listaA">Ver Tipos Alimentos</string>
-    <string name="btn_detallesAlimento">Informacion Alimento</string>
-    <string name="title_activity_nueva_rutina">NuevaRutinaActivity</string>
+    <string name="btnDetallesEjercicios">Exercise types</string>
+    <string name="btnDetallesEjer">Exercise Detail</string>
+    <string name="btnDieta">See Food</string>
+    <string name="btn_listaE">See Exercise List</string>
+    <string name="btn_listaA">See Food Types</string>
+    <string name="btn_detallesAlimento">Food Information</string>
+    <string name="title_activity_nueva_rutina">New Rutine</string>
 </resources>

@@ -11,7 +11,7 @@ import com.github.kittinunf.fuel.httpPost
 class RutinaBD{
     companion object {
         fun insertarOrden(rutinaClass: Rutina){
-            "http://192.168.100.44:1337/Rutinas".httpPost(listOf("fechaRegistro" to rutinaClass.fechaRegistro, "peso" to rutinaClass.peso))
+            "http://172.29.64.29:1337/Rutinas".httpPost(listOf("fechaRegistro" to rutinaClass.fechaRegistro, "peso" to rutinaClass.peso))
                     .responseString { request, _, result ->
                         Log.d("http-ejemplo", request.toString())
                     }
@@ -23,7 +23,7 @@ class RutinaBD{
             val rutinaRegistro: ArrayList<Rutina> = ArrayList()
             val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
             StrictMode.setThreadPolicy(policy)
-            val (request, response, result) = "http://192.168.100.44:1337/Rutinas".httpGet().responseString()
+            val (request, response, result) = "http://172.29.64.29:1337/Rutinas".httpGet().responseString()
             val jsonStringRutinas = result.get()
 
             val parser = Parser()

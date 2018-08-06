@@ -22,7 +22,7 @@ class AlimentosDB {
             val detalleAlimentos: ArrayList<Alimentos> = ArrayList()
             val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
             StrictMode.setThreadPolicy(policy)
-            val (request, response, result) = "http://192.168.100.44:1337/Alimentos?tipoAlimento=$alimentos".httpGet().responseString()
+            val (request, response, result) = "http://172.29.64.29:1337/Alimentos?tipoAlimento=$alimentos".httpGet().responseString()
             val jsonStringAlimentos = result.get()
 
             val parser = Parser()

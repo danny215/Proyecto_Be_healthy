@@ -2,10 +2,7 @@ package com.sourcey.materiallogindemo.Alimentos
 
 import android.content.Intent
 import android.support.v7.widget.RecyclerView
-import android.view.ContextMenu
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.Button
 import android.widget.TextView
 import com.sourcey.materiallogindemo.DetalleEjercicio.DetalleEjercicios
@@ -39,8 +36,9 @@ class AlimentosAdapter (private val detallealimentosList: List<Alimentos>) : Rec
         }
 
         override fun onCreateContextMenu(menu: ContextMenu?, v: View?, menuInfo: ContextMenu.ContextMenuInfo?) {
-            // menu?.add(Menu.NONE, R.id.item_menu_editar, Menu.NONE, "Editar")
-            // menu?.add(Menu.NONE, R.id.item_menu_eliminar, Menu.NONE, "Eliminar")
+             menu?.add(Menu.NONE, R.id.navigation_home, Menu.NONE, "Ir Home")
+                menu?.add(Menu.NONE, R.id.navigation_dashboard, Menu.NONE, "Ir Módulos")
+            menu?.add(Menu.NONE, R.id.navigation_notifications, Menu.NONE, "Enviar por correo")
         }
     }
 
